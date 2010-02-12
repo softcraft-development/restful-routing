@@ -179,7 +179,7 @@ namespace RestfulRouting
 									new RouteValueDictionary(new { controller = _controller }),
 									new RouteValueDictionary(new
 									{
-										httpMethod = new HttpMethodConstraint("POST")
+										httpMethod = new PostOverrideConstraint()
 									}),
 									new PostOverrideRouteHandler()));
 		}

@@ -71,6 +71,7 @@
     <Compile Include="HtmlHelperExtensions.cs" />
     <Compile Include="MapperBase.cs" />
     <Compile Include="PostOverrideActionTranslator.cs" />
+    <Compile Include="PostOverrideConstraint.cs" />
     <Compile Include="PostOverrideRouteHandler.cs" />
     <Compile Include="ResourceMapper.cs" />
     <Compile Include="ResourcesMapper.cs" />

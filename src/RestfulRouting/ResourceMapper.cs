@@ -19,6 +19,8 @@ namespace RestfulRouting
 
 			_resourcePath = BasePath() + resource;
 
+			MapPostOverrideForPutAndDelete();
+
 			MapCreate();
 
 			MapNew();
@@ -30,8 +32,6 @@ namespace RestfulRouting
 			MapUpdate();
 
 			MapDestroy();
-
-			MapPostOverrideForPutAndDelete();
-		}
+        }
 	}
 }
