@@ -235,7 +235,7 @@ namespace RestfulRouting
 
 		private RouteConfiguration GetChildConfiguration(string resource)
 		{
-			var singular = Inflector.Net.Inflector.Singularize(resource).ToLowerInvariant();
+			var singular = (Inflector.Net.Inflector.Singularize(resource) ?? resource).ToLowerInvariant();
 
 			var childConfiguration = RouteConfiguration.Default();
 
